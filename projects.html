@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Amin S. Idelhaj</title>
+  <meta name="description" content="Quantum error correction projects by Amin Idelhaj.">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header>
+    <h1>Amin S. Idelhaj</h1>
+    <nav aria-label="Main">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="projects.html" aria-current="page">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="expository.html">Expository Work</a></li>
+      <li><a href="friends.html">Friends</a></li>
+    </ul>
+    </nav>
+  </header>
+  <main id="main">
+<h2>Projects</h2>
+<p>
+The code for these projects is on my <a href="https://github.com/Daminark">GitHub</a>.
+</p>
+
+<h3><a href="https://github.com/Daminark/decoder-fixes-gross">Decoder fixes for sub-distance failures on the gross code</a></h3>
+<p>
+Status: in progress.
+</p>
+<p>
+Iterative decoders of the circuit-level $[\![144,12,12]\!]$ gross code fail on some fault sets of weight 4, far below the circuit distance, and several fixes have been proposed.
+This project scores them on one common yardstick, using the trapping sets of Pacenti, Raveendran and Vasić and the code's translation symmetry to decode the failing sets exhaustively.
+So far it reproduces their Relay-BP result and reduces their list of 92 million trapping sets to 1.3 million orbit representatives; the comparison of BP+OSD, BP+LSD and Landa's augmentation is under way.
+</p>
+
+<h3><a href="https://github.com/Daminark/clifford-noise-reduction">Clifford noise reduction (CliNR) in Stim</a></h3>
+<p>
+An implementation in Stim of Clifford noise reduction, the scheme of Delfosse and Tham, together with a simulation study of it.
+The study asks how good the scheme's analytic bounds are as guides, which family of checks to draw, and when the scheme pays off, under the paper's noise rates and under rates modeled on a trapped-ion system.
+The <a href="https://daminark.github.io/clifford-noise-reduction/explanation/findings.html">summary of findings</a> collects the answers.
+</p>
+
+<h3><a href="https://github.com/Daminark/quantum-state-preparation">Amplitude-encoding state preparation in Qiskit</a></h3>
+<p>
+Given a normalized vector, this builds a circuit of single-qubit gates and multi-controlled $R_Z$ rotations that prepares the corresponding quantum state.
+A worked derivation is in the repository's notebook.
+</p>
+</main>
+</body>
+</html>
